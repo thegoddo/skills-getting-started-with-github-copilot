@@ -138,10 +138,10 @@ button:hover {
 
 .participants {
   margin-top: 12px;
-  padding-left: 18px; /* bullet indent */
+  padding-left: 0;
   color: #444;
   font-size: 14px;
-  list-style: disc;
+  list-style: none; /* hide bullets */
 }
 
 .participants li {
@@ -149,6 +149,21 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* delete icon/button for participant list */
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.participant-delete:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* small circular initial avatar */
